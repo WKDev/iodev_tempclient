@@ -1,0 +1,41 @@
+common:
+  dss:
+    rtsp_port: 8554
+    prefix: "cam"
+    model_path: "dss_model.pt"
+    model_name: "dss"
+  tr:
+    model_path: "models/tr"
+    model_name: "tr"
+log:
+  level: "INFO"
+  path: "logs" 
+
+mqtt:
+  host: "192.168.11.38"
+  port: 1883
+  qos: 0
+  keepalive: 60
+  client_id: "tempclient"
+  username: "tempclient"
+  password: "tempclient"
+  tls: false
+
+devices:
+  dss:
+    dss0:
+      name: "dss2"
+      address: "192.168.11.12"
+      cameras:
+        - id: 1
+          stream: "cam1"
+        - id: 2
+          stream: "cam2"
+
+
+
+
+
+
+  
+  
